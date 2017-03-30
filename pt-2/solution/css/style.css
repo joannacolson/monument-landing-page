@@ -95,20 +95,22 @@ footer nav ul {
 
 footer nav ul li {
     display: inline-block;
-    margin: .1em;
+    margin: 2em 1em;
 }
 
 footer nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     color: #777;
-    font-size: .8em;
+    font-size: 1.5em;
     font-weight: 900;
 }
 
 footer p {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 20px;
+    border-top: 2px solid #777;
+    font-size: .8em;
 }
 
 .flexbox-container {
@@ -126,4 +128,26 @@ footer p {
 .column2 {
     width: 30%;
     padding: 10px;
+}
+
+footer div {
+    margin: 0 auto 2.5em auto;
+    width: 50%;
+}
+
+#email {
+    border: 0;
+    color: #777;
+    padding: 1em;
+    width: 20em;
+    margin: 0 1.5em;
+    text-align: center;
+}
+
+#button {
+    background-color: transparent;
+    color: #777;
+    padding: 10px 30px;
+    margin: 0 1.5em;
+    text-align: center;
 }
