@@ -58,17 +58,29 @@
             </section>
         </aside>
     </div>
-    <form class="commentform">
-        <h2>LEAVE A COMMENT</h2>
-        <div>
-            <input class="name" type="text" name="name" placeholder="NAME">
-            <input class="email" type="email" name="email" placeholder="EMAIL">
+    <form class="comment-form">
+        <div class="row header">
+            <div class="column column-12">
+                <h2 class="center">LEAVE A COMMENT</h2>
+            </div>
         </div>
-        <div>
-            <textarea class="comment" name="comment" placeholder="COMMENT"></textarea>
+        <div class="row name-email-row">
+            <div class="column column-6">
+                <input class="name" type="text" name="name" placeholder="NAME">
+            </div>
+            <div class="column column-6">
+                <input class="email" type="email" name="email" placeholder="EMAIL">
+            </div>
         </div>
-        <div>
-            <input class="submit" type="submit" name="submit" value="SUBMIT">
+        <div class="row comment-row">
+            <div class="column column-12">
+                <textarea class="comment" name="comment" placeholder="COMMENT"></textarea>
+            </div>
+        </div>
+        <div class="row submit-row">
+            <div class="column column-12">
+                <input class="submit" type="submit" name="submit" value="SUBMIT">
+            </div>
         </div>
     </form>
     <footer>
