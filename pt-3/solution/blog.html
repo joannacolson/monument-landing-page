@@ -59,29 +59,11 @@
         </aside>
     </div>
     <form class="comment-form">
-        <div class="row header">
-            <div class="column column-12">
-                <h2 class="center">LEAVE A COMMENT</h2>
-            </div>
-        </div>
-        <div class="row name-email-row">
-            <div class="column column-6">
-                <input class="name" type="text" name="name" placeholder="NAME">
-            </div>
-            <div class="column column-6">
-                <input class="email" type="email" name="email" placeholder="EMAIL">
-            </div>
-        </div>
-        <div class="row comment-row">
-            <div class="column column-12">
-                <textarea class="comment" name="comment" placeholder="COMMENT"></textarea>
-            </div>
-        </div>
-        <div class="row submit-row">
-            <div class="column column-12">
-                <input class="submit" type="submit" name="submit" value="SUBMIT">
-            </div>
-        </div>
+        <h2 class="center col-2-2">LEAVE A COMMENT</h2>
+        <input class="name col-1-2" type="text" name="name" placeholder="NAME">
+        <input class="email col-1-2" type="email" name="email" placeholder="EMAIL">
+        <textarea class="comment col-2-2" name="comment" placeholder="COMMENT"></textarea>
+        <input class="submit col-2-2" type="submit" name="submit" value="SUBMIT">
     </form>
     <footer>
         <nav id="contact" class="">
@@ -92,9 +74,9 @@
             </ul>
         </nav>
         <div>
-            <form>
-                <input id="email" type="text" name="email" placeholder="EMAIL ADDRESS">
-                <input id="button" type="button" name="emailButton" value="KEEP IN TOUCH">
+            <form class="keep-in-touch-form">
+                <input class="email-address col-1-2" type="text" name="email" placeholder="EMAIL ADDRESS">
+                <input class="button col-1-2" type="button" name="emailButton" value="KEEP IN TOUCH">
             </form>
         </div>
         <p id="copyright">&copy;2017 Joanna Colson</p>
