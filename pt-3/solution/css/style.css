@@ -1,4 +1,5 @@
 body {
+    background-color: white;
     font-family: 'Lato', sans-serif;
     color: #555;
 }
@@ -9,8 +10,20 @@ header {
     background-position: center center;
     background-size: cover;
     background-color: tan;
-    height: 20em;
+    height: 23em;
     color: white;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.navbar {
+    background-color: white;
+    padding-bottom: 1em;
 }
 
 nav ul {
@@ -21,6 +34,9 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: .1em 2%;
+    -ms-transform: translate(-1.5em, 0);
+    -webkit-transform: translate(-1.5em, 0);
+    transform: translate(-1.5em, 0);
 }
 
 nav ul li a {
@@ -36,7 +52,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: .5625em;
-    padding-top: 5em;
+    padding-top: 4em;
 }
 
 h4 {
@@ -96,6 +112,9 @@ footer nav ul {
 footer nav ul li {
     display: inline-block;
     margin: 2em 1%;
+    -ms-transform: translate(-1.5em, 0);
+    -webkit-transform: translate(-1.5em, 0);
+    transform: translate(-1.5em, 0);
 }
 
 footer nav ul li a {
@@ -139,7 +158,6 @@ footer div {
     border: 0;
     color: #777;
     padding: .9em;
-    width: 20em;
     margin: 0 0 3em 0;
     text-align: center;
 }
@@ -171,6 +189,10 @@ footer div {
     margin: 0 auto;
 }
 
+form h2 {
+    margin-bottom: 2em;
+}
+
 .center {
     text-align: center;
 }
@@ -178,7 +200,7 @@ footer div {
 .name {
     color: #777;
     padding: .4em 1em;
-    margin: .7em 0%;
+    margin: 0 0 .7em;
     height: 2.5em;
     border: 2px solid #777;
 }
@@ -186,7 +208,7 @@ footer div {
 .email {
     color: #777;
     padding: .4em 1em;
-    margin: .7em 0;
+    margin: 0 0 .7em;
     height: 2.5em;
     border: 2px solid #777;
 }
@@ -209,12 +231,14 @@ footer div {
 
 .comment-form,
 .keep-in-touch-form {
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    align-content: flex-start;
+    align-content: flex -start;
 }
 
 .col-1-2 {
@@ -228,12 +252,41 @@ footer div {
 
 @media (max-width: 560px) {
     body {
-        background-color: yellow;
+        background-color: white;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    h1 {
+        padding-top: 3em;
     }
     .column1 {
-        width: 100%
+        width: 100%;
+        margin: 0 1.25em;
     }
     .column2 {
         display: none;
+    }
+    p {
+        font-size: .8em;
+        line-height: 1.5em;
+    }
+    .col-1-2 {
+        width: 100%;
+    }
+    footer nav ul li {
+        margin: 2em 3%;
+    }
+    .email-address {
+        margin: 0 0 1em 0;
+    }
+    .button {
+        margin: 0 0 1em 0;
+    }
+    footer div {
+        width: 70%;
     }
 }
